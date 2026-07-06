@@ -14,7 +14,7 @@ export const Navbar: React.FC = () => {
           <a
             key={item}
             href={`#${item.toLowerCase()}`}
-            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200"
+            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-xs sm:text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200"
           >
             {item}
           </a>

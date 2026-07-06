@@ -24,12 +24,12 @@ export const Footer: React.FC = () => {
       {/* FOOTER INNER */}
       <div className="max-w-[1820px] mx-auto px-5 sm:px-8 md:px-10 pt-16 pb-10 sm:pt-20 sm:pb-12">
         {/* TOP GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8">
           
           {/* Cell 1 (Heading) */}
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <FadeIn delay={0.1} y={30}>
-              <h2 className="hero-heading font-black uppercase tracking-tight leading-none text-4xl sm:text-5xl lg:text-6xl max-w-sm">
+              <h2 className="hero-heading font-black uppercase tracking-tight leading-none text-4xl sm:text-5xl lg:text-6xl max-w-md md:max-w-full">
                 BUILDING SCALABLE WEB APPLICATIONS
               </h2>
             </FadeIn>
@@ -54,13 +54,6 @@ export const Footer: React.FC = () => {
             </FadeIn>
           </div>
 
-          {/* Nav 3 (Legal) */}
-          <div className="col-span-1">
-            <FadeIn delay={0.4} y={30} className="flex flex-col items-start gap-4 sm:gap-6">
-              <a href="#privacy" className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm sm:text-base hover:opacity-70 transition-opacity duration-200">Privacy Policy</a>
-              <a href="#terms" className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm sm:text-base hover:opacity-70 transition-opacity duration-200">Terms of Use</a>
-            </FadeIn>
-          </div>
         </div>
 
         {/* BRAND ROW */}
@@ -75,7 +68,7 @@ export const Footer: React.FC = () => {
                   />
                 </div>
               </Magnet>
-              <span className="font-black uppercase leading-[0.8] tracking-tight text-[18vw] sm:text-[16vw] text-[#D7E2EA] whitespace-nowrap flex-1 min-w-0 group-hover:opacity-90 transition-opacity">
+              <span className="font-black uppercase leading-[0.8] tracking-tight text-[15vw] sm:text-[16vw] text-[#D7E2EA] whitespace-nowrap flex-1 min-w-0 group-hover:opacity-90 transition-opacity">
                 AGGELOS
               </span>
             </a>

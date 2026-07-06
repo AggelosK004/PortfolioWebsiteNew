@@ -22,7 +22,7 @@ export const HeroSection: React.FC = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="flex justify-between items-end px-6 md:px-10 pb-7 sm:pb-8 md:pb-10 relative z-20 pointer-events-none">
+      <div className="flex flex-col sm:flex-row justify-between items-center sm:items-end gap-6 sm:gap-0 px-6 md:px-10 pb-7 sm:pb-8 md:pb-10 relative z-20 pointer-events-none">
         <FadeIn delay={0.35} y={20} className="pointer-events-auto">
           <p className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug max-w-[160px] sm:max-w-[220px] md:max-w-[260px]" style={{ fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}>
             a full stack developer driven by building scalable web applications
