@@ -1,7 +1,6 @@
 import React from 'react';
 import { FadeIn } from '../ui/FadeIn';
 import { AnimatedText } from '../ui/AnimatedText';
-import { ContactButton } from '../ui/ContactButton';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -32,10 +31,6 @@ export const AboutSection: React.FC = () => {
             text="I am a full-stack developer with hands-on experience in modern web technologies, building scalable applications with React, Next.js, and TypeScript. I focus on clean architecture, maintainable code, and delivering practical solutions. Let's build something incredible together!"
             className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[560px] text-[clamp(1rem,2vw,1.35rem)]"
           />
-
-          <div className="mt-16 sm:mt-20 md:mt-24">
-            <ContactButton />
-          </div>
         </div>
       </div>
     </section>
