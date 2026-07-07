@@ -42,7 +42,7 @@ const ProjectCard = ({ project, i, progress, range, targetScale }: any) => {
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <div ref={containerRef} className="h-[85vh] flex items-center justify-center sticky top-24 md:top-32 w-full">
+    <div ref={containerRef} className="h-[65vh] lg:h-[75vh] xl:h-[85vh] flex items-center justify-center sticky top-20 md:top-28 w-full">
       <motion.div 
         style={{ scale, top: `calc(-5vh + ${i * 28}px)` }}
         className="w-full relative flex flex-col gap-6 md:gap-8 rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8"
@@ -75,13 +75,13 @@ const ProjectCard = ({ project, i, progress, range, targetScale }: any) => {
               src={project.images.leftTop} 
               alt={`${project.name} preview 1`} 
               className="w-full object-cover rounded-[40px] sm:rounded-[50px] md:rounded-[60px]"
-              style={{ height: 'clamp(130px, 16vw, 230px)' }}
+              style={{ height: 'clamp(100px, 14vw, 230px)' }}
             />
             <img 
               src={project.images.leftBottom} 
               alt={`${project.name} preview 2`} 
               className="w-full object-cover rounded-[40px] sm:rounded-[50px] md:rounded-[60px] h-full"
-              style={{ minHeight: 'clamp(160px, 22vw, 340px)' }}
+              style={{ minHeight: 'clamp(120px, 18vw, 340px)' }}
             />
           </div>
           {/* Right Column (60%) */}
@@ -109,7 +109,7 @@ export const ProjectsSection: React.FC = () => {
     <section id="projects" className="bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 relative z-20 px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32">
       <FadeIn delay={0} y={40} className="w-full">
         <h2 className="hero-heading font-black uppercase text-center mb-16 sm:mb-20 md:mb-28 leading-none" style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}>
-          Project
+          Projects
         </h2>
       </FadeIn>
 

@@ -17,13 +17,9 @@ const services = [
     name: "API Integration",
     desc: "Connecting systems using REST APIs and Orval-generated OpenAPI clients to improve frontend-backend alignment."
   },
+ 
   {
     num: "04",
-    name: "Open Source",
-    desc: "Active contributor to open-source projects, collaborating on development, deployment tasks, and Git-based team workflows."
-  },
-  {
-    num: "05",
     name: "Architecture & Design",
     desc: "Focusing on clean architecture, maintainable code, and delivering practical solutions from concept to deployment."
   }

@@ -10,7 +10,7 @@ export const Navbar: React.FC = () => {
       className="fixed top-0 left-0 w-full flex justify-between items-center px-6 md:px-10 py-4 md:py-6 z-50 bg-[#0C0C0C]/40 backdrop-blur-md shadow-lg"
     >
       <div className="flex justify-between items-center w-full max-w-[1820px] mx-auto">
-        {['About', 'Projects', 'Contact'].map((item) => (
+        {['About', 'Experience', 'Projects', 'Contact'].map((item) => (
           <a
             key={item}
             href={`#${item.toLowerCase()}`}
