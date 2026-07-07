@@ -6,8 +6,9 @@ interface ContactButtonProps {
 
 export const ContactButton: React.FC<ContactButtonProps> = ({ className = '' }) => {
   return (
-    <button
-      className={`rounded-full uppercase tracking-widest text-white font-medium 
+    <a
+      href="mailto:aggelosk2004@gmail.com"
+      className={`inline-block rounded-full uppercase tracking-widest text-white font-medium 
         px-8 py-3 sm:px-10 sm:py-3.5 md:px-12 md:py-4 
         text-xs sm:text-sm md:text-base ${className}`}
       style={{
@@ -18,6 +19,6 @@ export const ContactButton: React.FC<ContactButtonProps> = ({ className = '' }) 
       }}
     >
       Contact Me
-    </button>
+    </a>
   );
 };

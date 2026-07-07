@@ -14,6 +14,16 @@
   *, *::before, *::after {
     box-sizing: inherit;
   }
+
+  ::selection {
+    background-color: #D7E2EA;
+    color: #0C0C0C;
+  }
+
+  ::-moz-selection {
+    background-color: #D7E2EA;
+    color: #0C0C0C;
+  }
 }
 
 @layer utilities {

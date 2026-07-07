@@ -44,20 +44,24 @@ const ProjectCard = ({ project, i, progress, range, targetScale }: any) => {
   return (
     <div ref={containerRef} className="h-[65vh] lg:h-[75vh] xl:h-[85vh] flex items-center justify-center sticky top-20 md:top-28 w-full">
       <motion.div 
-        style={{ scale, top: `calc(-5vh + ${i * 28}px)` }}
-        className="w-full relative flex flex-col gap-6 md:gap-8 rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8"
+        style={{ 
+          scale, 
+          top: `calc(-5vh + ${i * 28}px)`,
+          boxShadow: 'inset 0 0 100px 50px rgba(12,12,12,0.55), 0 0 0 2px rgba(12,12,12,0.1)'
+        }}
+        className="w-full relative flex flex-col gap-6 md:gap-8 rounded-[40px] sm:rounded-[50px] md:rounded-[60px] bg-[#FFFFFF] p-4 sm:p-6 md:p-8"
       >
         {/* Top Row */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-center gap-6">
-            <span className="font-black leading-none text-[#D7E2EA]" style={{ fontSize: 'clamp(3rem, 10vw, 140px)' }}>
+            <span className="font-black leading-none text-[#0C0C0C]" style={{ fontSize: 'clamp(3rem, 10vw, 140px)' }}>
               {project.num}
             </span>
             <div className="flex flex-col">
-              <span className="text-[#D7E2EA]/60 uppercase tracking-widest text-sm sm:text-base font-light">
+              <span className="text-[#0C0C0C]/60 uppercase tracking-widest text-sm sm:text-base font-light">
                 {project.client}
               </span>
-              <span className="text-[#D7E2EA] uppercase font-medium" style={{ fontSize: 'clamp(1rem, 2.2vw, 2.1rem)' }}>
+              <span className="text-[#0C0C0C] uppercase font-medium" style={{ fontSize: 'clamp(1rem, 2.2vw, 2.1rem)' }}>
                 {project.name}
               </span>
             </div>
