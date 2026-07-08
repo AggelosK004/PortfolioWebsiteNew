@@ -8,6 +8,7 @@ const projects = [
     num: "01",
     client: "React.js / Material-UI",
     name: "CloudView",
+    link: "https://aggelosk004.github.io/CloudView/",
     images: {
       leftTop: "/projects/cloudview/desktop-dark.png",
       right: "/projects/cloudview/mobile.png",
@@ -19,6 +20,7 @@ const projects = [
     num: "02",
     client: "NestJS / PostgreSQL",
     name: "To-Do List",
+    link: "https://aggelos-kolitsis-todolist.netlify.app/",
     images: {
       leftTop: "/projects/todolist/login.png",
       leftBottom: "/projects/todolist/register.png",
@@ -29,6 +31,7 @@ const projects = [
     num: "03",
     client: "React.js / Material-UI",
     name: "Portfolio Website",
+    link: "https://aggelosk004.github.io/PortfolioWebsite/",
     images: {
       leftTop: "/projects/portfolio/contact.png",
       leftBottom: "/projects/portfolio/projects.png",
@@ -49,7 +52,7 @@ const ProjectCard = ({ project, i, progress, range, targetScale }: any) => {
           top: `calc(-5vh + ${i * 28}px)`,
           boxShadow: 'inset 0 0 100px 50px rgba(12,12,12,0.55), 0 0 0 2px rgba(12,12,12,0.1)'
         }}
-        className="w-full relative flex flex-col gap-6 md:gap-8 rounded-[40px] sm:rounded-[50px] md:rounded-[60px] bg-[#FFFFFF] p-4 sm:p-6 md:p-8"
+        className="w-full relative flex flex-col gap-6 md:gap-8 rounded-[40px] sm:rounded-[50px] md:rounded-[60px] bg-[#BBCCD7] p-4 sm:p-6 md:p-8"
       >
         {/* Top Row */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -67,7 +70,7 @@ const ProjectCard = ({ project, i, progress, range, targetScale }: any) => {
             </div>
           </div>
           <div className="sm:self-end sm:pb-4 shrink-0">
-            <LiveProjectButton />
+            <LiveProjectButton href={project.link} />
           </div>
         </div>
 

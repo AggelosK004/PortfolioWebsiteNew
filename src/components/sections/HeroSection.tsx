@@ -1,13 +1,28 @@
 import React from 'react';
 import { FadeIn } from '../ui/FadeIn';
 import { ContactButton } from '../ui/ContactButton';
-import { Navbar } from '../ui/Navbar';
+import PillNav from '../ui/PillNav';
 
 export const HeroSection: React.FC = () => {
   return (
     <section className="h-screen flex flex-col justify-between overflow-x-clip relative">
-      <Navbar />
-      {/* Placeholder to maintain flex layout since Navbar is fixed */}
+      <PillNav
+        logoAlt="Aggelos Logo"
+        items={[
+          { label: 'About', href: '#about' },
+          { label: 'Services', href: '#services' },
+          { label: 'Experience', href: '#experience' },
+          { label: 'Projects', href: '#projects' },
+          { label: 'Contact', href: '#contact' }
+        ]}
+        className="w-full flex justify-between"
+        ease="power2.easeOut"
+        baseColor="#0C0C0C"
+        pillColor="#D7E2EA"
+        hoveredPillTextColor="#D7E2EA"
+        pillTextColor="#0C0C0C"
+      />
+      {/* Placeholder to maintain flex layout since nav is fixed */}
       <div className="px-6 md:px-10 pt-6 md:pt-8 opacity-0 pointer-events-none" aria-hidden="true">
         <div className="text-sm md:text-lg lg:text-[1.4rem]">&nbsp;</div>
       </div>
