@@ -13,8 +13,8 @@ function App() {
     <main className="w-full bg-[#0C0C0C] text-[#D7E2EA] font-sans overflow-x-clip min-h-screen">
       <HeroSection />
       {/* <MarqueeSection /> */}
-      <AboutSection />
       <LogoLoopSection />
+      <AboutSection />
       <ServicesSection />
       <ExperienceSection />
       <ProjectsSection />
