@@ -160,13 +160,13 @@ const PillNav: React.FC<PillNavProps> = ({
   };
 
   const handleLogoEnter = () => {
-    const img = logoImgRef.current;
-    if (!img) return;
+    const el = logoRef.current;
+    if (!el) return;
     logoTweenRef.current?.kill();
-    gsap.set(img, { rotate: 0 });
-    logoTweenRef.current = gsap.to(img, {
+    gsap.set(el, { rotate: 0 });
+    logoTweenRef.current = gsap.to(el, {
       rotate: 360,
-      duration: 0.2,
+      duration: 0.4,
       ease,
       overwrite: 'auto'
     });
@@ -243,7 +243,7 @@ const PillNav: React.FC<PillNavProps> = ({
           {logo ? (
             <img src={logo} alt={logoAlt} ref={logoImgRef} />
           ) : (
-            <span style={{ color: pillColor, fontWeight: 800, fontSize: '18px' }}>A</span>
+            <span style={{ color: pillColor, fontWeight: 900, fontSize: '18px', display: 'block', lineHeight: 1, letterSpacing: '-1px' }}>AK</span>
           )}
         </a>
 
